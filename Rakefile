@@ -1,5 +1,5 @@
 # Rakefile
-task default: [:clean, :build, :install]
+task default: [:clean, :build, :install, :runHelloWorld]
 
 task :clean do
     puts "Cleaning packages"
@@ -23,6 +23,6 @@ task :install => [:uninstall] do
 end
 
 task :runHelloWorld do
-    ruby hello_world.rb
+    ruby "hello_world.rb"
     puts "Goodbye Universe"
 end
