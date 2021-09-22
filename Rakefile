@@ -25,4 +25,5 @@ end
 task :runHelloWorld do
     ruby "hello_world.rb"
     puts "Goodbye Universe"
+    puts "dev feature"
 end
