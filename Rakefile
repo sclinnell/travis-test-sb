@@ -21,3 +21,8 @@ task :install => [:uninstall] do
     puts 'Installing mypackage-0.0.0'
     # `sudo apt-get install -y ./mypackage-0.0.0.deb`
 end
+
+task :runHelloWorld do
+    ruby hello_world.rb
+    puts "Goodbye Universe"
+end
